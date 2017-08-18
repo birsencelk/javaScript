@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascriptin Genel Yapýsý</title>
+    
+</head>
+<body>
+  <!-- Adý
+     <input id="adi" type="text" value="merhaba" />
+     <input id="sonuc" type="text" />
+      -->
+
+    <input onkeypress="inputKeypress(event)" />
+    <select onchange="selectOnchange(this)">
+
+        <option value="11">Malatya</option>
+
+        <option value="12">Ýstanbul</option>
+    </select>
+        <script>
+
+
+            function inputKeypress(e) {
+                if (e.keyCode == 115)
+                { alert("s harfine basýldý") }
+            }
+            function selectOnchange(e) {
+                var s = 0;
+            }
+
+
+     // document.getElementById("sonuc").value = document.getElementById("adi").value;
+     // document.getElementById("divEtiketi").innerHTML = "deðiþti";
+
+     //String Metotlarý
+     var mesaj = "merhaba dünya ben buradayým";
+     mesaj = mesaj.replace("merhaba", "naber");
+     console.log(mesaj);
+     var diziMesaj = mesaj.split("a");
+     console.log(diziMesaj);
+     if (mesaj.indexOf("ben") != -1) {
+         console.log("ben ifadesi var");
+     }
+     console.log(mesaj.toLowerCase());
+     console.log(mesaj.toUpperCase());
+
+     //Numara Metotlarý
+     var a = "1";
+     var b = 2;
+     var c = "1.2";
+     console.log(parseInt(a) + b + parseFloat(c));
+
+     //Tarih Metotlarý
+     var tarih = new Date();
+     console.log(tarih.getHours() + ":" + tarih.getMinutes());
+
+
+        </script>
+</body>
+</html>
