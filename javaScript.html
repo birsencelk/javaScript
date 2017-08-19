@@ -3,11 +3,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Javascriptin Genel Yapısı</title>
+    <title>Javascriptin Genel YapÃ½sÃ½</title>
     
 </head>
 <body>
-  <!-- Adı
+  <!-- AdÃ½
      <input id="adi" type="text" value="merhaba" />
      <input id="sonuc" type="text" />
       -->
@@ -17,14 +17,14 @@
 
         <option value="11">Malatya</option>
 
-        <option value="12">İstanbul</option>
+        <option value="12">Ãstanbul</option>
     </select>
         <script>
 
 
             function inputKeypress(e) {
                 if (e.keyCode == 115)
-                { alert("s harfine basıldı") }
+                { alert("s harfine basÃ½ldÃ½") }
             }
             function selectOnchange(e) {
                 var s = 0;
@@ -32,10 +32,10 @@
 
 
      // document.getElementById("sonuc").value = document.getElementById("adi").value;
-     // document.getElementById("divEtiketi").innerHTML = "değişti";
+     // document.getElementById("divEtiketi").innerHTML = "deÃ°iÃ¾ti";
 
-     //String Metotları
-     var mesaj = "merhaba dünya ben buradayım";
+     //String MetotlarÃ½
+     var mesaj = "merhaba dÃ¼nya ben buradayÃ½m";
      mesaj = mesaj.replace("merhaba", "naber");
      console.log(mesaj);
      var diziMesaj = mesaj.split("a");
@@ -46,13 +46,14 @@
      console.log(mesaj.toLowerCase());
      console.log(mesaj.toUpperCase());
 
-     //Numara Metotları
+     
+     //Numara MetotlarÃ½
      var a = "1";
      var b = 2;
      var c = "1.2";
      console.log(parseInt(a) + b + parseFloat(c));
 
-     //Tarih Metotları
+     //Tarih MetotlarÃ½
      var tarih = new Date();
      console.log(tarih.getHours() + ":" + tarih.getMinutes());
 
